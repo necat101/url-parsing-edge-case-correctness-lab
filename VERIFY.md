@@ -1,6 +1,6 @@
 # VERIFY.md — Fresh-clone verification
 
-## Commit cc44fcd (HEAD)
+## Commit 615c432 (HEAD)
 
 Verified 2026-06-26.
 
@@ -14,15 +14,15 @@ $ python3 generate_cases.py
 Wrote 50 cases to cases/cases.jsonl (25423 bytes)
 
 $ python3 run_lab.py
-Results: results/results.jsonl (139294 bytes)
+Results: results/results.jsonl (139364 bytes)
 Report: RESULTS.md
-  urllib_urlsplit_baseline: pass=50 fail=0 skip=0 time=2.97ms
-  urllib_urlparse_baseline: pass=50 fail=0 skip=0 time=3.02ms
-  parse_qsl_query_decoder: pass=50 fail=0 skip=0 time=3.08ms
-  naive_split_scheme_host_path: pass=46 fail=4 skip=0 time=0.37ms
-  naive_at_host_detector: pass=40 fail=10 skip=0 time=0.44ms
-  idna_codec_demo: pass=39 fail=0 skip=11 time=25.87ms
-  ipaddress_host_check: pass=8 fail=0 skip=42 time=2.47ms
+  urllib_urlsplit_baseline: pass=50 fail=0 skip=0 time=4.92ms
+  urllib_urlparse_baseline: pass=50 fail=0 skip=0 time=5.18ms
+  parse_qsl_query_decoder: pass=50 fail=0 skip=0 time=5.43ms
+  naive_split_scheme_host_path: pass=46 fail=4 skip=0 time=0.60ms
+  naive_at_host_detector: pass=40 fail=10 skip=0 time=0.73ms
+  idna_codec_demo: pass=39 fail=0 skip=11 time=41.93ms
+  ipaddress_host_check: pass=8 fail=0 skip=42 time=4.36ms
 ```
 
 All 50 cases generated deterministically (seed 42).
@@ -37,6 +37,7 @@ Python: CPython 3.12.3 on Linux-6.17.0-1009-aws-x86_64-with-glibc2.39
 
 ## Prior verifications
 
+- Commit `cc44fcd` — also fresh-clone verified with identical results.
 - Commit `8dcb27b` — also fresh-clone verified with identical results.
 - Commit `5e7cad7` — also fresh-clone verified with identical results.
 - Commit `d4de2ec` — code cleanup + README clarification; also fresh-clone verified with identical results.

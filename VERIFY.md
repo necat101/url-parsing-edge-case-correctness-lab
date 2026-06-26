@@ -1,6 +1,6 @@
 # VERIFY.md — Fresh-clone verification
 
-## Commit d4de2ec (HEAD)
+## Commit 5e7cad7 (HEAD)
 
 Verified 2026-06-26.
 
@@ -14,15 +14,15 @@ $ python3 generate_cases.py
 Wrote 50 cases to cases/cases.jsonl (25423 bytes)
 
 $ python3 run_lab.py
-Results: results/results.jsonl (139384 bytes)
+Results: results/results.jsonl (139385 bytes)
 Report: RESULTS.md
-  urllib_urlsplit_baseline: pass=50 fail=0 skip=0 time=5.17ms
+  urllib_urlsplit_baseline: pass=50 fail=0 skip=0 time=5.13ms
   urllib_urlparse_baseline: pass=50 fail=0 skip=0 time=5.38ms
-  parse_qsl_query_decoder: pass=50 fail=0 skip=0 time=5.60ms
-  naive_split_scheme_host_path: pass=46 fail=4 skip=0 time=0.62ms
-  naive_at_host_detector: pass=40 fail=10 skip=0 time=0.77ms
-  idna_codec_demo: pass=39 fail=0 skip=11 time=43.83ms
-  ipaddress_host_check: pass=8 fail=0 skip=42 time=4.64ms
+  parse_qsl_query_decoder: pass=50 fail=0 skip=0 time=5.55ms
+  naive_split_scheme_host_path: pass=46 fail=4 skip=0 time=0.61ms
+  naive_at_host_detector: pass=40 fail=10 skip=0 time=0.75ms
+  idna_codec_demo: pass=39 fail=0 skip=11 time=43.36ms
+  ipaddress_host_check: pass=8 fail=0 skip=42 time=4.45ms
 ```
 
 All 50 cases generated deterministically (seed 42).
@@ -35,6 +35,7 @@ Python: CPython 3.12.3 on Linux-6.17.0-1009-aws-x86_64-with-glibc2.39
 
 ---
 
-## Prior verification
+## Prior verifications
 
-Commit `4de259e` (initial results commit) was also fresh-clone verified before VERIFY.md was added in commit `a48d485`.
+- Commit `d4de2ec` — code cleanup + README clarification; also fresh-clone verified with identical results.
+- Commit `4de259e` — initial results commit; fresh-clone verified before VERIFY.md was added in commit `a48d485`.

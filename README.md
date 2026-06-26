@@ -61,7 +61,7 @@ Output:
 | idna_codec_demo | 39 | 0 | 11 |
 | ipaddress_host_check | 8 | 0 | 42 |
 
-All naive failures are **expected** — that's the point.
+All naive failures are **expected** — that's the point. `idna_codec_demo` and `ipaddress_host_check` skip non-applicable cases (IP literals / non-IP hosts) by design.
 
 See [RESULTS.md](RESULTS.md) for full details.
 

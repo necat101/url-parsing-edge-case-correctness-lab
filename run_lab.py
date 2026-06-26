@@ -17,11 +17,6 @@ OUT_DIR = Path("results")
 OUT_JSONL = OUT_DIR / "results.jsonl"
 OUT_MD = Path("RESULTS.md")
 
-NAIVE_EXPECTED_FAIL = {
-    "naive_split_scheme_host_path",
-    "naive_at_host_detector",
-}
-
 
 def _safe_get(obj, name):
     try:

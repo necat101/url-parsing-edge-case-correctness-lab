@@ -10,9 +10,9 @@
 
 **Timing:** time.perf_counter()
 
-**Memory:** tracemalloc — current 603.2 KiB, peak 603.8 KiB
+**Memory:** tracemalloc — current 603.1 KiB, peak 603.7 KiB
 
-**Total wall time:** 0.0591s
+**Total wall time:** 0.1691s
 
 **Subprocess count:** 0
 
@@ -20,13 +20,13 @@
 
 | Method | Kind | Pass | Fail | Skip | Expected-Fail | Malicious-Misclass | Time (ms) |
 |---|---|---:|---:|---:|---:|---:|---:|
-| urllib_urlsplit_baseline | component-parse | 50 | 0 | 0 | 0 | 0 | 2.960 |
-| urllib_urlparse_baseline | component-parse | 50 | 0 | 0 | 0 | 0 | 3.031 |
-| parse_qsl_query_decoder | query-decode | 50 | 0 | 0 | 0 | 0 | 3.170 |
-| naive_split_scheme_host_path | component-parse | 46 | 4 | 0 | 4 | 0 | 0.361 |
-| naive_at_host_detector | component-parse | 40 | 10 | 0 | 10 | 1 | 0.424 |
-| idna_codec_demo | hostname-normalization | 39 | 0 | 11 | 0 | 0 | 25.578 |
-| ipaddress_host_check | hostname-normalization | 8 | 0 | 42 | 0 | 0 | 2.530 |
+| urllib_urlsplit_baseline | component-parse | 50 | 0 | 0 | 0 | 0 | 14.649 |
+| urllib_urlparse_baseline | component-parse | 50 | 0 | 0 | 0 | 0 | 19.707 |
+| parse_qsl_query_decoder | query-decode | 50 | 0 | 0 | 0 | 0 | 3.267 |
+| naive_split_scheme_host_path | component-parse | 46 | 4 | 0 | 4 | 0 | 0.434 |
+| naive_at_host_detector | component-parse | 40 | 10 | 0 | 10 | 1 | 0.901 |
+| idna_codec_demo | hostname-normalization | 39 | 0 | 11 | 0 | 0 | 69.615 |
+| ipaddress_host_check | hostname-normalization | 8 | 0 | 42 | 0 | 0 | 4.657 |
 
 ## Skip Matrix
 
